@@ -175,7 +175,7 @@ elif pagina_principal == "Diálogo":
 
     # Colocamos los diálogos en las columnas
     texto4 = """
-    **Celeste:** Buen día profesor, lo que pasa es que hace unos días tuve un encuentro muy particular y he recibido unas notas que me han dejado pensando.
+    **Celeste:** Buen día profesor, lo que pasa es que hace unos días tuve un encuentro muy particular y he recibido unas notas que me han dejado pensando.//
     ¿Usted cree que en un futuro los viajes en el tiempo sean posibles? Digamos que le planteo una situación hipotética en la que es posible, ¿consideraría ético hacer el viaje con el objetivo de cambiar el pasado ya que el futuro no es lo que esperaba? o, quizá, ¿solo para aprender del pasado aquellas cosas que considera importantes y se han perdido, como las humanidades tal vez, y llevar esos conocimientos de vuelta al futuro? 
     """
     col4.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto4}</div>", unsafe_allow_html=True)
