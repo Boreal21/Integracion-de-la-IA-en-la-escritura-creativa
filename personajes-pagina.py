@@ -144,7 +144,7 @@ elif pagina_principal == "Escenarios":
     col2.image("escenario2.webp", caption='Vista interior del club de debate clandestino debajo de la antigua Facultad de Humanidades.', width=700)
 
     # Creamos dos columnas separadas para las imágenes
-    #col3, col4 = st.columns(2)
+    col3, col4 = st.columns(2)
 
     # Colocamos las imágenes en las columnas
     col3.image("escenario3.webp", caption='Vista interior de la sala de seminario de la Facultad de Humanidades con una mesa redonda para los alumnos.', width=700)
