@@ -18,7 +18,7 @@
 import streamlit as st
 
 # La función st.markdown permite agregar texto en formato Markdown a la aplicación de Streamlit
-st.markdown("<h1 style='text-align: center;'>Título de la tarea</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Ecos de sueños perdidos más allá de los algoritmos</h1>", unsafe_allow_html=True)
 
 # Creamos una barra lateral
 sidebar = st.sidebar
