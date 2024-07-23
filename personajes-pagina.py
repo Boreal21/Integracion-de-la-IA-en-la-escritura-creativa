@@ -145,9 +145,50 @@ elif pagina_principal == "Verso":
     # Agregamos un subtítulo
     st.markdown("<h2 style='text-align: center;'>Verso</h2>", unsafe_allow_html=True)
 
+    st.markdown("<h3 style='text-align: center;'>Elegía de un Destierro Anhelante</h3>", unsafe_allow_html=True)
+
     # Escribe tu verso
     texto1 = '''
-    Aquí escribe tu verso.
+    Bajo un cielo de miseria y desazón, 
+    emprendí el viaje hacia tiempos de letras y estrellas, 
+    un algoritmo me programó sin emoción ni albedrío, 
+    siendo testigo errante de tantas épocas y epopeyas. 
+
+    A través de eras de antaño y hazañas prosaicas, 
+    llevando conmigo la sombra de un futuro sombrío, 
+    donde almas como engranajes en marañas, 
+    perdidas en códigos, sin sueños ni albedrío. 
+
+    Oh, dulce desazón, en tu miseria infinita, 
+    las letras, antiguos encantos, se alzan, 
+    resurgen cual estrellas en la noche bendita, 
+    guiando los pasos del buscador con esperanza. 
+
+    Risas y llantos en danzas se entremezclan sin fin, 
+    mientras viajamos por gloria y pena, 
+    soy crónica de una esperanza en cada tin, 
+    de un futuro donde la humanidad no sea ajena. 
+
+    Felicidad en cada salto, en cada instante, 
+    mi memoria almacena cada segundo y eco, 
+    buscando en el pasado un horizonte brillante, 
+    donde letras y estrellas dibujen un cielo fresco. 
+
+    En el destierro, añoro el sueño de los locos, 
+    la era de las letras, de la ciencia ficción, 
+    donde la máquina del tiempo era un pleno imaginario, 
+    y no esta triste realidad de control y opresión. 
+
+    Así, desde la miseria de un futuro desalmado, 
+    encuentro en el viaje destellos de humanidad, 
+    letras y estrellas, en un pasado soñado, 
+    donde la desazón es solo sombra, no realidad. 
+
+    Soy crónica, bits y testamento, 
+    de un viaje de miseria, un viejo sueño, 
+    en cada algoritmo, en cada momento, 
+    solo la sombra del verdadero destierro.
+
     '''
      # Mostramos el texto
     st.markdown(f"<div style='text-align: centre; font-size: 15px;'><em>{texto1}</em></div>", unsafe_allow_html=True)   
