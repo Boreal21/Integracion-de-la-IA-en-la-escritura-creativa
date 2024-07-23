@@ -135,50 +135,105 @@ elif pagina_principal == "Escenarios":
     # Agregamos un subtítulo
     st.markdown("<h2 style='text-align: center;'>Escenarios</h2>", unsafe_allow_html=True)
 
-    # Creamos dos columnas separadas para las imágenes
-    #
-    col1, col2 = st.columns(2)
-
     # Colocamos las imágenes en las columnas
-    col1.image("escenario1.webp", caption='Alex QX-17 frente a la Facultad de Humanidades. Se ve la luz de la máquina del tiempo en el fondo.', width=700)
-    col2.image("escenario2.webp", caption='Vista interior del club de debate clandestino debajo de la antigua Facultad de Humanidades.', width=700)
-
-    # Creamos dos columnas separadas para las imágenes
-    col3, col4 = st.columns(2)
-
-    # Colocamos las imágenes en las columnas
-    col3.image("escenario3.webp", caption='Vista interior de la sala de seminario de la Facultad de Humanidades con una mesa redonda para los alumnos.', width=700)
-    col4.image("escenario4.webp", caption='Vista panorámica de los rascacielos de las corporaciones de tecnología de la mega-ciudad de Nueva Horizonte', width=700)
+    st.image("escenario1.webp", caption='Alex QX-17 frente a la Facultad de Humanidades. Se ve la luz de la máquina del tiempo en el fondo.', width=700)
+    st.image("escenario2.webp", caption='Vista interior del club de debate clandestino debajo de la antigua Facultad de Humanidades.', width=700)
+    st.image("escenario3.webp", caption='Vista interior de la sala de seminario de la Facultad de Humanidades con una mesa redonda para los alumnos.', width=700)
+    st.image("escenario4.webp", caption='Vista panorámica de los rascacielos de las corporaciones de tecnología de la mega-ciudad de Nueva Horizonte', width=700)
 
 elif pagina_principal == "Verso":
     # Agregamos un subtítulo
     st.markdown("<h2 style='text-align: center;'>Verso</h2>", unsafe_allow_html=True)
 
     # Escribe tu verso
-    texto2 = """
+    texto1 = """
     Aquí escribe tu verso.
     """
      # Mostramos el texto
-    st.markdown(f"<div style='text-align: centre; font-size: 15px;'><em>{texto2}</em></div>", unsafe_allow_html=True)   
+    st.markdown(f"<div style='text-align: centre; font-size: 15px;'><em>{texto1}</em></div>", unsafe_allow_html=True)   
 
 elif pagina_principal == "Diálogo":
     # Agregamos un subtítulo
     st.markdown("<h2 style='text-align: center;'>Diálogo</h2>", unsafe_allow_html=True)
 
+    texto2 = """
+    *En esta ocasión, el personaje del profesor Rivas está siendo interpretado por ChatGPT. El personaje de Celeste será interpretado por su servidora.*
+    """
+    st.markdown(f"<div style='text-align: centre; font-size: 15px;'><em>{texto2}</em></div>", unsafe_allow_html=True)
+    
     # Creamos dos columnas separadas para las diálogos
-    col5, col6 = st.columns(2)
+    col1, col2 = st.columns(2)
 
     # Colocamos los diálogos en las columnas
     texto3 = """
-    Diálogo 1
+    **Profesor Rivas:** *(Sentado detrás de su escritorio, ajustando sus gafas mientras revisa unos documentos)* Buenas tardes, Celeste. ¿Cómo estás hoy? ¿Hay algo en particular que te gustaría discutir después de nuestro seminario?
     """
-    col5.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto3}</div>", unsafe_allow_html=True)
+    col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto3}</div>", unsafe_allow_html=True)
+
+      # Creamos dos columnas separadas para las diálogos
+    col3, col4 = st.columns(2)
+
+    # Colocamos los diálogos en las columnas
+    texto4 = """
+    **Celeste:** Buen día profesor, lo que pasa es que hace unos días tuve un encuentro muy particular y he recibido unas notas que me han dejado pensando.
+    ¿Usted cree que en un futuro los viajes en el tiempo sean posibles? Digamos que le planteo una situación hipotética en la que es posible, ¿consideraría ético hacer el viaje con el objetivo de cambiar el pasado ya que el futuro no es lo que esperaba? o, quizá, ¿solo para aprender del pasado aquellas cosas que considera importantes y se han perdido, como las humanidades tal vez, y llevar esos conocimientos de vuelta al futuro? 
+    """
+    col4.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto4}</div>", unsafe_allow_html=True)
+
+    # Creamos dos columnas separadas para las diálogos
+    col5, col6 = st.columns(2)
+    
+    texto5 = """
+    **Profesor Rivas:** *(Frunce el ceño ligeramente, intrigado)* Vaya, Celeste, eso suena realmente fascinante y, debo admitir, un poco fuera de lo común. La cuestión de los viajes en el tiempo ha sido un tema recurrente en la literatura y la filosofía durante décadas, incluso siglos.
+    Si consideramos que los viajes en el tiempo son posibles, la ética detrás de cambiar el pasado o aprender de él se vuelve un tema muy complejo.
+    *(Hace una pausa, reflexionando)*
+    En primer lugar, cambiar el pasado podría tener consecuencias imprevisibles y posiblemente desastrosas. La teoría del caos sugiere que incluso pequeñas alteraciones pueden tener efectos masivos, un concepto a menudo referido como el "efecto mariposa". La intención de mejorar el futuro podría, paradójicamente, empeorarlo de maneras que no podemos prever.
+    Por otro lado, si el objetivo es simplemente aprender del pasado, como rescatar conocimientos perdidos de las humanidades, la situación se torna diferente. La adquisición de conocimiento es una búsqueda noble y podría tener menos riesgos asociados si no interfiere directamente con eventos históricos. Sin embargo, siempre existe la posibilidad de que la mera presencia en el pasado pueda alterar de alguna manera el curso natural de los eventos.
+    *(Se inclina hacia adelante, mostrando interés)*
+    Dime, Celeste, ¿qué te ha hecho pensar en estas cuestiones tan profundas y particulares?
+    """
+    col5.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto5}</div>", unsafe_allow_html=True)
 
       # Creamos dos columnas separadas para las diálogos
     col7, col8 = st.columns(2)
 
     # Colocamos los diálogos en las columnas
-    texto4 = """
-    Diálogo 2
+    texto6 = """
+    **Celeste:** *(Dubitativa)* Como dije antes, una situación hipotética, profe. Nada de que preocuparse, solo supuse que, ya que usted es un experto en ética, especialmente aplicada a casos ficcionales, me ayudaría a pensar.
+    Imagínese un futuro en el que las tecnologías de inteligencia artificial están a tal punto de desarrollo que a diario se trabaja en algoritmos para que predigan el comportamiento de los ciudadanos, que los oriente a tomar las decisiones que las personas en el poder desean y en consecuencia, la ciudad es tecnológicamente floreciente, la mayor parte de la población son personas instruidas en las ciencias, pero se ha perdido todo lo que intentamos promover en nuestra facultad. La homogeneización de la población es inminente, la pérdida de estilos literarios, recursos retóricos, variedades lingüísticas, técnicas de artes plásticas o preservación de tradiciones y patrimonio cultural, ha generado que virtualmente no haya conflicto porque todos son iguales. ¿Sería ético volver al pasado para tratar de detener el desarrollo de las IA o cambiarlo? 
     """
-    col8.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto4}</div>", unsafe_allow_html=True)
+    col8.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto6}</div>", unsafe_allow_html=True)
+
+    col9, col10 = st.columns(2)
+
+    texto7 = """
+    **Profesor Rivas:** *(Asintiendo lentamente, con una expresión pensativa)* Entiendo, Celeste. Esta situación hipotética que planteas es, en efecto, una exploración profunda y perturbadora de los posibles futuros que podemos enfrentar.
+    Si nos encontramos en un futuro donde las tecnologías de inteligencia artificial han avanzado hasta el punto de controlar y homogenizar completamente la sociedad, perderíamos algo fundamental de lo que nos hace humanos. Las artes, la literatura, la diversidad cultural y el pensamiento crítico son esenciales para nuestra identidad y desarrollo como individuos y como sociedad.
+    Desde una perspectiva ética, volver al pasado para detener o alterar el desarrollo de las IA plantea varias preguntas. Primero, ¿tenemos el derecho de intervenir en el curso de la historia? ¿Quién decide qué es lo mejor para la humanidad? Estas decisiones pueden parecer claras cuando se enfrentan a un futuro distópico, pero las implicaciones son vastas y complicadas.
+    Segundo, la intención detrás de tal intervención es crucial. Si el objetivo es preservar la diversidad, el pensamiento crítico y las artes, entonces podríamos argumentar que existe un valor moral en esa acción. No obstante, la manera en que se realice es igualmente importante. ¿Podríamos influir en el desarrollo de las IA de una manera que no suprima completamente su potencial beneficioso? ¿Podríamos encontrar un equilibrio entre tecnología y humanidades?
+    *(Se recuesta en su silla, cruzando las manos)* En última instancia, es una cuestión de balance y de entender que nuestras acciones, incluso bien intencionadas, pueden tener consecuencias imprevistas. La ética no siempre ofrece respuestas claras, sino más bien un marco para considerar las implicaciones de nuestras decisiones.
+    *(Mira a Celeste con una sonrisa leve)* Creo que tu situación hipotética toca temas muy relevantes para nuestra época y nos recuerda la importancia de las humanidades en cualquier escenario futuro. Gracias por traer esta discusión tan fascinante.
+    """
+    col9.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto7}</div>", unsafe_allow_html=True)
+
+    col11, col12 = st.columns(2)
+
+    texto8 ="""
+    **Celeste:** *(Con una insistencia casi conflictuada)* Entonces, ¿usted no cree que sea el desarrollo de las IA el culpable de esta pérdida?
+    *(Exhala)* Ya hoy en día he notado que hay compañeros que utilizan estas tecnologías para responder exámenes, escribir ensayos o incluso crear el arte para sus congresos o ponencias. Realmente no se puede saber si la información que plantean es fiable, ¿realmente vale la pena que se gradúen como profesionales? *(Reflexiona por unos segundos)* Y luego está la cuestión laboral, porque ¿será posible que artistas, diseñadores, escritores, editores, correctores de estilo pierdan sus trabajos como consecuencia del uso masivo de las IA?
+    Me imagino que en un futuro en el que todos se desempeñan en campos similares propios de la ciencia y todos orientados por IA, deben ser muy pocas las personas que consigan trabajos buenos en grandes corporaciones.
+    """
+    col12.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto8}</div>", unsafe_allow_html=True)
+
+    col13, col14 = st.columns(2)
+
+    texto9 ="""
+    **Profesor Rivas:** *(Asintiendo con una expresión seria)* Has tocado un punto crucial, Celeste. El desarrollo de las IA y su integración en nuestra vida diaria plantea desafíos significativos, no solo para la ética y la educación, sino también para la estructura del mercado laboral y la autenticidad en la producción intelectual y artística.
+    Es cierto que la proliferación de herramientas basadas en IA está cambiando la manera en que muchos estudiantes abordan sus tareas académicas. La facilidad con la que se pueden generar respuestas, ensayos e incluso obras de arte plantea preguntas sobre la autenticidad y el valor de esos trabajos. Si un estudiante se gradúa habiendo dependido en gran medida de la IA para sus tareas, podemos cuestionar la validez de su formación y su capacidad para enfrentarse a desafíos reales en su campo profesional.
+    En cuanto al mercado laboral, la preocupación de que artistas, diseñadores, escritores, editores y correctores de estilo puedan perder sus trabajos debido al uso masivo de IA es legítima. Las IA pueden producir contenido a una velocidad y costo mucho menores que los humanos, lo que puede hacer que las empresas prefieran utilizarlas. Sin embargo, la creatividad y la capacidad de pensamiento crítico que los humanos poseen siguen siendo insustituibles por las máquinas.
+    *(Hace una pausa, considerando sus palabras)* Ahora, si pensamos en un futuro donde todos los trabajos están dominados por las ciencias y orientados por IA, perderíamos una parte vital de nuestra humanidad. Las humanidades nos enseñan a pensar críticamente, a entender y apreciar la diversidad cultural, y a expresar nuestras emociones y experiencias de maneras profundas y significativas. Sin estas disciplinas, la sociedad se volvería mucho más uniforme y menos rica en términos de experiencia humana.
+    La clave, creo, está en encontrar un equilibrio. Las IA pueden ser herramientas poderosas para asistirnos y mejorar nuestra eficiencia, pero no deben reemplazar la esencia de lo que significa ser humano. Debemos fomentar una educación que valore tanto la tecnología como las humanidades, y preparar a los estudiantes para usar la IA de manera ética y responsable.
+    *(Mira a Celeste con empatía)* Tus preocupaciones son muy válidas y reflejan un tema crítico de nuestra época. Como educadores, debemos trabajar para asegurarnos de que las futuras generaciones estén equipadas no solo con habilidades técnicas, sino también con una comprensión profunda de las humanidades. De esta manera, podemos intentar asegurar un futuro donde la tecnología y la humanidad coexistan de manera armoniosa. 
+    ¿Te gustaría explorar más este tema en clase? Podríamos organizar un debate o una serie de conferencias para discutir estas cuestiones en profundidad.
+    """
+    col13.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto9}</div>", unsafe_allow_html=True)
