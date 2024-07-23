@@ -84,7 +84,7 @@ if pagina_principal == "Ficha técnica de personajes y escenarios":
 
     |----|Perfil descriptivo| 
     |-------|--------------|
-    | Edad | 25 años |
+    | **Edad** | 25 años |
     | Identidad de género | Fluido |
     | Ocupación | Especialista en Tecnociencia y Ética Algorítmica. Tiene conocimientos en bioingeniería e inteligencia artificial. Oficialmente trabaja en un laboratorio de investigación avanzada para una corporación desarrollando algoritmos; también estudia las implicaciones éticas de la tecnología.|  
     | Descripción física | Con su figura andrógina y su metro setenta, es un individuo ágil y delgado, cuya postura relajada refleja aires de confianza. Gracias a la tecnología capilar de la época, su cabello teñido de color plata, puede cambiar su tono según su estado de ánimo o contexto. Su piel clara y delicados rasgos suaves, junto con su mirada de un profundo azul eléctrico se alojan en un rostro ovalado tanto masculino como femenino. | 
@@ -136,10 +136,11 @@ elif pagina_principal == "Escenarios":
     st.markdown("<h2 style='text-align: center;'>Escenarios</h2>", unsafe_allow_html=True)
 
     # Creamos dos columnas separadas para las imágenes
-    #col1, col2 = st.columns(2)
+    #
+    col1, col2 = st.columns(2)
 
     # Colocamos las imágenes en las columnas
-    #col1.image("foto_1.jpg", caption='Aquí escribe la etiqueta', width=300)
+    col1.image("escenario1.webp", caption='Alex QX-17 en la Facultad de Humanidades. Se ve la máquina del tiempo en el fondo.', width=500)
     #col2.image("foto_2.jpg", caption='Aquí escribe la etiqueta', width=300)
 
     # Creamos dos columnas separadas para las imágenes
